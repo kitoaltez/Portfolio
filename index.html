@@ -7,18 +7,36 @@
     <title>Hans Lee Langit | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="background-veil" aria-hidden="true"></div>
+    <div class="crt-scanlines" aria-hidden="true"></div>
+    <div class="crt-flicker" aria-hidden="true"></div>
+    <div class="crt-status" aria-hidden="true">
+        <span class="crt-status-ready">READY</span>
+        <span class="crt-status-line">SIGNAL ACQUIRED</span>
+        <span class="crt-status-prompt">PRESS START</span>
+        <span class="crt-loading" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </div>
 
     <header class="site-header">
         <a class="brand" href="#top">Hans Lee</a>
-        <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <div class="header-controls">
+            <button class="crt-toggle" type="button" aria-pressed="false">CRT: OFF</button>
+            <button class="crt-intensity" type="button" aria-pressed="false">CRT LVL: LOW</button>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        </div>
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -29,29 +47,53 @@
             <p class="eyebrow">Portfolio 2026</p>
             <h1>Working student. Creative builder. Future software engineer.</h1>
             <p class="hero-copy">
-                I am Hans Lee Langit, currently studying at PHINMA University. I enjoy building practical and pixel-focused projects that solve real problems.
+                Hi, I am Hans Lee Langit from PHINMA University. I am a working student who builds projects after class and work hours, with a focus on practical tools, clean UI, and pixel-accurate details.
             </p>
             <div class="hero-actions">
                 <a class="button primary" href="#projects">See Projects</a>
-                <a class="button ghost" href="mailto:hansleepo@gmail.com">Email Me</a>
+                <a class="button ghost" href="https://github.com/kitoaltez" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
             </div>
         </section>
 
         <section id="about" class="panel reveal">
             <h2>About Me</h2>
             <p>
-                I balance academics and work while continuing to improve my coding skills. My focus is on building useful, clean, and visual-first web experiences.
+                I balance studies and work while continuously improving my development skills. I enjoy transforming ideas into interactive websites, especially projects that are useful for students and everyday users.
+            </p>
+            <p>
+                Right now I am focusing on front-end development, UI quality, and writing JavaScript code that is simple, readable, and maintainable.
             </p>
         </section>
 
         <section id="skills" class="panel reveal">
             <h2>Core Skills</h2>
             <ul class="skill-list" aria-label="Core skills">
-                <li>HTML and Semantic Structure</li>
-                <li>CSS Layout and Responsive Design</li>
-                <li>JavaScript Fundamentals</li>
-                <li>UI Styling and Pixel Art Direction</li>
+                <li>HTML5, semantic structure, and accessible markup</li>
+                <li>CSS layouts with responsive design for mobile and desktop</li>
+                <li>JavaScript for UI interactions and dynamic behavior</li>
+                <li>Design polishing, visual hierarchy, and pixel-focused styling</li>
             </ul>
+        </section>
+
+        <section id="experience" class="panel reveal">
+            <h2>Experience and Education</h2>
+            <div class="timeline" aria-label="Experience and education timeline">
+                <article class="timeline-item">
+                    <h3>PHINMA University</h3>
+                    <p class="timeline-meta">Current | College Student</p>
+                    <p>I am currently pursuing my studies while building web projects and improving my development skills outside class hours.</p>
+                </article>
+                <article class="timeline-item">
+                    <h3>Working Student Journey</h3>
+                    <p class="timeline-meta">Current | Part-time Work and Study</p>
+                    <p>Balancing school and work taught me time management, consistency, and how to deliver practical projects under real constraints.</p>
+                </article>
+                <article class="timeline-item">
+                    <h3>Self-Directed Front-end Practice</h3>
+                    <p class="timeline-meta">2024 to Present | Personal Projects</p>
+                    <p>I regularly create mini web apps and interface experiments to improve my HTML, CSS, JavaScript, and user interface design skills.</p>
+                </article>
+            </div>
         </section>
 
         <section id="projects" class="reveal">
@@ -66,31 +108,49 @@
                     <ul class="carousel-track">
                         <li class="carousel-slide current-slide">
                             <article class="project-card">
-                                <img src="https://via.placeholder.com/640x360/1f2d2b/d6efe2?text=Project+Preview" alt="Preview for Project 1">
+                                <img src="p2.png" alt="Preview for Money Manager app">
                                 <div>
-                                    <h3>Project 1</h3>
-                                    <p>A starter web project focused on clean layout, structure, and smooth navigation.</p>
-                                    <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">View Project</a>
+                                    <h3>Money Manager App</h3>
+                                    <p>A finance tracker concept where users can log expenses, view balances, and monitor spending habits with a clean interface.</p>
+                                    <ul class="stack-tags" aria-label="Tech stack for Money Manager App">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Local Storage</li>
+                                    </ul>
+                                    <a href="https://github.com/kitoaltez" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                                 </div>
                             </article>
                         </li>
                         <li class="carousel-slide">
                             <article class="project-card">
-                                <img src="p2.png" alt="Preview for Money Manager project">
+                                <img src="https://via.placeholder.com/640x360/1a2330/dae4f4?text=Student+Task+Planner" alt="Preview for Student Task Planner project">
                                 <div>
-                                    <h3>Money Manager</h3>
-                                    <p>A personal finance tracker concept for logging spending and monitoring budget habits.</p>
-                                    <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+                                    <h3>Student Task Planner</h3>
+                                    <p>A scheduling tool idea for students to track deadlines, subjects, and priorities with a focused dashboard layout.</p>
+                                    <ul class="stack-tags" aria-label="Tech stack for Student Task Planner">
+                                        <li>HTML</li>
+                                        <li>CSS Grid</li>
+                                        <li>JavaScript</li>
+                                        <li>Responsive UI</li>
+                                    </ul>
+                                    <a href="https://github.com/kitoaltez" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                                 </div>
                             </article>
                         </li>
                         <li class="carousel-slide">
                             <article class="project-card">
-                                <img src="https://via.placeholder.com/640x360/2e2116/fbe2cf?text=Project+Preview" alt="Preview for Project 3">
+                                <img src="https://via.placeholder.com/640x360/2d2038/f5d7ff?text=Creative+Portfolio+UI" alt="Preview for portfolio UI experiment">
                                 <div>
-                                    <h3>Project 3</h3>
-                                    <p>An experimental UI build where I explored stronger color systems and interaction details.</p>
-                                    <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">View Project</a>
+                                    <h3>Portfolio UI Experiment</h3>
+                                    <p>A visual design experiment exploring creative dark-mode interfaces, animated sections, and interactive project browsing.</p>
+                                    <ul class="stack-tags" aria-label="Tech stack for Portfolio UI Experiment">
+                                        <li>HTML</li>
+                                        <li>CSS Animations</li>
+                                        <li>JavaScript</li>
+                                        <li>UI Prototyping</li>
+                                    </ul>
+                                    <a href="https://github.com/kitoaltez/Portfolio" target="_blank" rel="noopener noreferrer">View Repository</a>
                                 </div>
                             </article>
                         </li>
@@ -102,8 +162,9 @@
 
         <section id="contact" class="panel reveal">
             <h2>Contact</h2>
-            <p>Let us collaborate on school or freelance projects.</p>
+            <p>Let us collaborate on school, internship, or freelance projects.</p>
             <a class="contact-link" href="mailto:hansleepo@gmail.com">hansleepo@gmail.com</a>
+            <p><a class="contact-link" href="https://github.com/kitoaltez" target="_blank" rel="noopener noreferrer">github.com/kitoaltez</a></p>
         </section>
     </main>
 
