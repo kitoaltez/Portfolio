@@ -1,0 +1,29 @@
+Hans Lee Langit
+Portfolio Resume
+
+Summary
+Working student at PHINMA University focused on front-end development, UI design, and practical web projects.
+
+Education
+PHINMA University
+Current college student
+
+Experience
+Working Student
+- Balancing school and part-time work while building web projects
+- Practicing front-end development and interface design
+
+Projects
+- Money Manager App: expense tracking and personal finance UI
+- Student Task Planner: deadline and priority tracking concept
+- Portfolio UI Experiment: retro-style portfolio and interaction design
+
+Skills
+- HTML5, semantic structure, accessibility
+- CSS, responsive layouts, animations
+- JavaScript, UI interactions, DOM updates
+- UI polishing and pixel-focused styling
+
+Contact
+hansleepo@gmail.com
+github.com/kitoaltez

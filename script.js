@@ -1,10 +1,23 @@
 const menuButton = document.querySelector('.menu-btn');
 const nav = document.querySelector('.site-nav');
+const navLinks = Array.from(document.querySelectorAll('.site-nav a'));
 const crtToggle = document.querySelector('.crt-toggle');
 const crtIntensityButton = document.querySelector('.crt-intensity');
 const crtStatus = document.querySelector('.crt-status');
 const revealItems = document.querySelectorAll('.reveal');
 let crtBootTimer = null;
+
+const setActiveNavLink = (sectionId) => {
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute('href') === `#${sectionId}`;
+
+    if (isActive) {
+      link.setAttribute('aria-current', 'true');
+    } else {
+      link.removeAttribute('aria-current');
+    }
+  });
+};
 
 const playCrtChime = () => {
   const AudioContextClass = window.AudioContext || window.webkitAudioContext;
@@ -188,6 +201,23 @@ const observer = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => observer.observe(item));
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveNavLink(entry.target.id);
+      }
+    });
+  },
+  { threshold: 0.45 }
+);
+
+document.querySelectorAll('main section[id]').forEach((section) => sectionObserver.observe(section));
+
+if (navLinks.length > 0) {
+  setActiveNavLink('about');
+}
 
 const yearNode = document.querySelector('#year');
 if (yearNode) {
