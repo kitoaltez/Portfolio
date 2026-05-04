@@ -3,65 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <meta name="description" content="Hans Lee Langit portfolio website.">
+    <title>Hans Lee Langit | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hans Lee</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="background-veil" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#top">Hans Lee</a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi I'm Hans Lee Langit I'm studiying at Phinma University and I'm a working student. I'm also knowledgeable about some programming languages and I also like pixel if i make projects.</p>
-    </section>
+    <main id="top">
+        <section class="hero reveal" aria-label="Introduction">
+            <p class="eyebrow">Portfolio 2026</p>
+            <h1>Working student. Creative builder. Future software engineer.</h1>
+            <p class="hero-copy">
+                I am Hans Lee Langit, currently studying at PHINMA University. I enjoy building practical and pixel-focused projects that solve real problems.
+            </p>
+            <div class="hero-actions">
+                <a class="button primary" href="#projects">See Projects</a>
+                <a class="button ghost" href="mailto:hansleepo@gmail.com">Email Me</a>
+            </div>
+        </section>
 
-    <section id="projects">
-        <div class="project-box">
-            <h2>My Projects</h2>
-            <div class="carousel">
-                <button class="prev">←</button>
+        <section id="about" class="panel reveal">
+            <h2>About Me</h2>
+            <p>
+                I balance academics and work while continuing to improve my coding skills. My focus is on building useful, clean, and visual-first web experiences.
+            </p>
+        </section>
+
+        <section id="skills" class="panel reveal">
+            <h2>Core Skills</h2>
+            <ul class="skill-list" aria-label="Core skills">
+                <li>HTML and Semantic Structure</li>
+                <li>CSS Layout and Responsive Design</li>
+                <li>JavaScript Fundamentals</li>
+                <li>UI Styling and Pixel Art Direction</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="reveal">
+            <div class="section-heading">
+                <h2>Selected Projects</h2>
+                <p>Use the arrows to browse.</p>
+            </div>
+
+            <div class="carousel" aria-label="Project carousel">
+                <button class="carousel-btn prev" aria-label="Previous project">&#8592;</button>
                 <div class="carousel-track-container">
                     <ul class="carousel-track">
-                        <li class="carousel-slide">
-                            <img src="https://via.placeholder.com/300" alt="Project 1" />
-                            <h3>Project 1</h3>
-                            <p>Brief description of project 1.</p>
-                            <a href="https://github.com/yourusername/project1">View Project</a>
+                        <li class="carousel-slide current-slide">
+                            <article class="project-card">
+                                <img src="https://via.placeholder.com/640x360/1f2d2b/d6efe2?text=Project+Preview" alt="Preview for Project 1">
+                                <div>
+                                    <h3>Project 1</h3>
+                                    <p>A starter web project focused on clean layout, structure, and smooth navigation.</p>
+                                    <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">View Project</a>
+                                </div>
+                            </article>
                         </li>
                         <li class="carousel-slide">
-                            <img src="p2.png" alt="Project 2" />
-                            <h3>Money Manager</h3>
-                            <p>Brief description of project 2.</p>
-                            <a href="https://github.com/yourusername/project2">View Project</a>
+                            <article class="project-card">
+                                <img src="p2.png" alt="Preview for Money Manager project">
+                                <div>
+                                    <h3>Money Manager</h3>
+                                    <p>A personal finance tracker concept for logging spending and monitoring budget habits.</p>
+                                    <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+                                </div>
+                            </article>
                         </li>
                         <li class="carousel-slide">
-                            <img src="https://via.placeholder.com/300" alt="Project 3" />
-                            <h3>Project 3</h3>
-                            <p>Brief description of project 3.</p>
-                            <a href="https://github.com/yourusername/project3">View Project</a>
+                            <article class="project-card">
+                                <img src="https://via.placeholder.com/640x360/2e2116/fbe2cf?text=Project+Preview" alt="Preview for Project 3">
+                                <div>
+                                    <h3>Project 3</h3>
+                                    <p>An experimental UI build where I explored stronger color systems and interaction details.</p>
+                                    <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">View Project</a>
+                                </div>
+                            </article>
                         </li>
                     </ul>
                 </div>
-                <button class="next">→</button>
+                <button class="carousel-btn next" aria-label="Next project">&#8594;</button>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me via email: <a href="hansleepo@gmail.com">hansleepo@gmail.com</a></p>
-    </section>
+        <section id="contact" class="panel reveal">
+            <h2>Contact</h2>
+            <p>Let us collaborate on school or freelance projects.</p>
+            <a class="contact-link" href="mailto:hansleepo@gmail.com">hansleepo@gmail.com</a>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Hans Lee. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Hans Lee Langit. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -1,29 +1,68 @@
+const menuButton = document.querySelector('.menu-btn');
+const nav = document.querySelector('.site-nav');
+const revealItems = document.querySelectorAll('.reveal');
+
+if (menuButton && nav) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+revealItems.forEach((item) => observer.observe(item));
+
+const yearNode = document.querySelector('#year');
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
+}
+
 const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
+const slides = track ? Array.from(track.children) : [];
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
-const slideWidth = slides[0].getBoundingClientRect().width;
 
-// Arrange the slides next to one another
-slides.forEach((slide, index) => {
-  slide.style.left = slideWidth * index + 'px';
-});
+let currentIndex = 0;
 
-// Function to move to the targeted slide
-const moveToSlide = (track, currentSlide, targetSlide) => {
-  track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+const renderSlide = () => {
+  if (!track || slides.length === 0) {
+    return;
+  }
+
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  slides.forEach((slide, index) => {
+    slide.classList.toggle('current-slide', index === currentIndex);
+  });
 };
 
-// Click right, move slides to the left
-nextButton.addEventListener('click', () => {
-  const currentSlide = track.querySelector('.carousel-slide');
-  const nextSlide = currentSlide.nextElementSibling || slides[0];
-  moveToSlide(track, currentSlide, nextSlide);
-});
+if (nextButton && prevButton && slides.length > 0) {
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    renderSlide();
+  });
 
-// Click left, move slides to the right
-prevButton.addEventListener('click', () => {
-  const currentSlide = track.querySelector('.carousel-slide');
-  const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
-  moveToSlide(track, currentSlide, prevSlide);
-});
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    renderSlide();
+  });
+
+  renderSlide();
+}
