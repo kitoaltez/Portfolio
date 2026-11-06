@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">Echoes of the Lighthouse game illustration</title>
+  <desc id="desc">A pixel-art lighthouse sends a beam over a dark ocean and mysterious island.</desc>
+  <defs><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#121b48"/><stop offset="1" stop-color="#071126"/></linearGradient></defs>
+  <rect width="640" height="360" fill="#17133f"/>
+  <circle cx="116" cy="80" r="36" fill="#f9d94f"/><rect x="98" y="50" width="10" height="8" fill="#fff4ae"/>
+  <g fill="#7e6ac4"><rect x="32" y="52" width="5" height="5"/><rect x="192" y="42" width="5" height="5"/><rect x="560" y="66" width="5" height="5"/><rect x="484" y="40" width="5" height="5"/></g>
+  <path d="M0 180h640v180H0z" fill="url(#sea)"/>
+  <path d="M0 232l88-20 66 16 70-26 94 27 80-19 80 20 86-25 76 16v139H0z" fill="#09162f"/>
+  <path d="M345 112L640 60v32l-295 45z" fill="#ffe89a" opacity=".8"/><path d="M360 125l280-19v20l-280 18z" fill="#f9d94f" opacity=".35"/>
+  <g transform="translate(300 82)">
+    <rect x="25" y="34" width="42" height="126" fill="#d5d9ef"/><rect x="16" y="153" width="60" height="16" fill="#7b86c7"/>
+    <rect x="18" y="24" width="56" height="14" fill="#ff8d4e"/><rect x="28" y="7" width="36" height="18" fill="#d5d9ef"/>
+    <rect x="36" y="12" width="20" height="10" fill="#f9d94f"/><rect x="0" y="169" width="92" height="12" fill="#333d82"/>
+    <rect x="42" y="52" width="10" height="16" fill="#4a54a0"/><rect x="42" y="83" width="10" height="16" fill="#4a54a0"/><rect x="42" y="114" width="10" height="16" fill="#4a54a0"/>
+  </g>
+  <g stroke="#59e7a5" stroke-width="4" fill="none"><path d="M84 282h75"/><path d="M120 298h110"/><path d="M405 270h120"/></g>
+  <text x="28" y="42" fill="#f9d94f" font-family="monospace" font-size="17" font-weight="bold">ECHOES OF THE LIGHTHOUSE</text>
+</svg>

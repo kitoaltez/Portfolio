@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">Arcane Conquest pixel RPG illustration</title>
+  <desc id="desc">A pixel-art hero stands before a moonlit castle and magical forest.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#16134b"/><stop offset="1" stop-color="#38205e"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#263d5a"/><stop offset="1" stop-color="#111b39"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#sky)"/>
+  <rect x="0" y="215" width="640" height="145" fill="url(#ground)"/>
+  <circle cx="500" cy="82" r="44" fill="#f9d94f"/>
+  <rect x="488" y="38" width="24" height="8" fill="#fff3a1"/>
+  <g fill="#111632">
+    <rect x="75" y="150" width="24" height="65"/><rect x="63" y="163" width="48" height="52"/>
+    <rect x="101" y="133" width="14" height="82"/><rect x="50" y="180" width="12" height="35"/>
+    <rect x="535" y="137" width="18" height="78"/><rect x="519" y="154" width="50" height="61"/>
+  </g>
+  <g fill="#6a4aa0"><rect x="82" y="164" width="14" height="12"/><rect x="539" y="160" width="10" height="12"/></g>
+  <g fill="#0b1630">
+    <path d="M0 245h70v-20h19v20h26v-31h22v31h28v-18h22v18h44v-34h18v34h25v-20h24v20h28v-28h18v28h34v-17h21v17h53v-26h20v26h45v-20h27v20h72v115H0z"/>
+  </g>
+  <g fill="#263f59"><rect x="290" y="235" width="18" height="75"/><rect x="310" y="252" width="16" height="58"/><rect x="270" y="255" width="16" height="55"/></g>
+  <g fill="#59e7a5"><rect x="285" y="218" width="8" height="8"/><rect x="318" y="230" width="8" height="8"/><rect x="255" y="240" width="8" height="8"/></g>
+  <g transform="translate(345 215)">
+    <rect x="16" y="0" width="20" height="12" fill="#f2bc7d"/><rect x="10" y="12" width="32" height="30" fill="#8c5a45"/>
+    <rect x="3" y="19" width="12" height="20" fill="#f2bc7d"/><rect x="39" y="19" width="12" height="20" fill="#f2bc7d"/>
+    <rect x="15" y="42" width="12" height="31" fill="#374b91"/><rect x="30" y="42" width="12" height="31" fill="#374b91"/>
+    <rect x="0" y="72" width="26" height="8" fill="#13152e"/><rect x="34" y="72" width="26" height="8" fill="#13152e"/>
+    <rect x="42" y="8" width="8" height="62" fill="#f9d94f"/><rect x="50" y="4" width="8" height="8" fill="#f9d94f"/>
+  </g>
+  <text x="28" y="42" fill="#f9d94f" font-family="monospace" font-size="18" font-weight="bold">ARCANE CONQUEST</text>
+</svg>

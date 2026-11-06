@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">Verif-AI scam detection platform illustration</title>
+  <desc id="desc">A pixel-art AI security dashboard displays a verified message and scam confidence analysis.</desc>
+  <rect width="640" height="360" fill="#0b142d"/>
+  <rect x="40" y="32" width="560" height="296" fill="#17284b" stroke="#9aa0ff" stroke-width="4"/>
+  <rect x="40" y="32" width="560" height="42" fill="#233b69"/>
+  <rect x="62" y="49" width="15" height="15" fill="#59e7a5"/><text x="91" y="62" fill="#f4f6ff" font-family="monospace" font-size="16" font-weight="bold">VERIF-AI // THREAT INTELLIGENCE</text>
+  <rect x="68" y="101" width="238" height="185" fill="#10203d"/><text x="88" y="130" fill="#b7c2ff" font-family="monospace" font-size="13">MESSAGE ANALYSIS</text>
+  <rect x="88" y="150" width="184" height="9" fill="#52699b"/><rect x="88" y="174" width="150" height="9" fill="#52699b"/><rect x="88" y="198" width="170" height="9" fill="#52699b"/><rect x="88" y="222" width="110" height="9" fill="#52699b"/>
+  <rect x="332" y="101" width="234" height="185" fill="#10203d"/><text x="352" y="130" fill="#b7c2ff" font-family="monospace" font-size="13">CLASSIFICATION</text>
+  <circle cx="449" cy="190" r="47" fill="#213a62" stroke="#59e7a5" stroke-width="8"/><path d="M420 190l18 18 42-45" fill="none" stroke="#59e7a5" stroke-width="9"/>
+  <text x="394" y="258" fill="#59e7a5" font-family="monospace" font-size="16" font-weight="bold">SAFE 96.4%</text>
+  <rect x="68" y="303" width="498" height="8" fill="#f9d94f"/><text x="68" y="322" fill="#f9d94f" font-family="monospace" font-size="12">15+ SCAM CATEGORIES // JWT + MFA // AUDIT LOGGING</text>
+</svg>

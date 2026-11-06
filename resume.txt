@@ -1,29 +1,32 @@
-Hans Lee Langit
+Hans Lee G. Langit
 Portfolio Resume
 
 Summary
-Working student at PHINMA University focused on front-end development, UI design, and practical web projects.
+System Developer / IT Student passionate about solving complex problems through technology, building scalable applications, and collaborating on practical software solutions.
 
 Education
-PHINMA University
-Current college student
+Bachelor of Science in Information Technology (Specializing in System Development)
+PHINMA - University of Pangasinan | 2023 - Present
 
-Experience
-Working Student
-- Balancing school and part-time work while building web projects
-- Practicing front-end development and interface design
+Certifications and Awards
+- AWS Fundamentals Certificate of Completion | Zuitt Learning Institute | Jan 2026 - Mar 2026
+- Certificate of Achievement | CITE Dev Exhibit 1.0 | October 17, 2025
+- Certificates of Appreciation | CITE Success Ladder Levels 1 and 2 / Trojan Awards | 2024 - 2025
 
 Projects
-- Money Manager App: expense tracking and personal finance UI
-- Student Task Planner: deadline and priority tracking concept
-- Portfolio UI Experiment: retro-style portfolio and interaction design
+- Arcane Conquest: 2D pixel RPG built with Unity C# and PHP
+- RegistrarConnect: institutional portal built with HTML, CSS, JavaScript, Vite, and Kotlin
+- Echoes of the Lighthouse: 3D open-world game built with Unity C# and MetaMask
+- Verif-AI: AI-powered scam detection platform built with Python, Vite, Node.js, MongoDB, and Git
 
 Skills
-- HTML5, semantic structure, accessibility
-- CSS, responsive layouts, animations
-- JavaScript, UI interactions, DOM updates
-- UI polishing and pixel-focused styling
+- Python, JavaScript, Java, C#, Kotlin, PHP, HTML, CSS
+- Node.js, Vite, Unity, Git, GitHub, Visual Studio Code, MetaMask
+- MySQL, MongoDB, AWS (EC2, DynamoDB, S3, Lambda, API Gateway)
+- Teamwork, adaptability, communication, trainability, troubleshooting
 
 Contact
+Phone: +63 976 661 3999
 hansleepo@gmail.com
-github.com/kitoaltez
+linkedin.com/in/hans-lee-langit-659999296
+https://kitoaltez.github.io/Portfolio/
