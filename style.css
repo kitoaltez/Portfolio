@@ -134,8 +134,39 @@ main > section { scroll-margin-top: 5rem; }
 .hero {
     min-height: 540px;
     display: grid;
-    align-content: center;
+    grid-template-columns: minmax(260px, 0.85fr) 1.15fr;
+    align-items: center;
+    gap: clamp(1.5rem, 5vw, 4rem);
     padding: clamp(1.3rem, 5vw, 4rem);
+}
+
+.hero-visual {
+    position: relative;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.hero-visual::before {
+    position: absolute;
+    inset: 12% 9%;
+    z-index: 0;
+    border: 2px solid rgba(249, 217, 79, 0.35);
+    box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.25);
+    content: "";
+}
+
+.hero-visual img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: block;
+    image-rendering: pixelated;
+}
+
+.hero-content { min-width: 0; }
+
+.hero-content h1 {
+    max-width: 700px;
 }
 
 .eyebrow {
@@ -376,7 +407,13 @@ footer {
 
 @media (max-width: 600px) {
     main { width: min(100% - 1rem, 1120px); padding-top: 1rem; }
-    .hero { min-height: 510px; padding: 1.2rem; }
+    .hero {
+        min-height: 0;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+    .hero-visual { max-width: 280px; }
     .section-heading { display: block; }
     .section-heading p { margin-top: -0.3rem; }
     .featured-card, .project-card { grid-template-columns: 1fr; }
